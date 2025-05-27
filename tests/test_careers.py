@@ -34,7 +34,7 @@ class TestCareers:
         env.CareerPage.wait_until_current_page_changed('https://useinsider.com/careers/')
 
         # Click "See all QA jobs" button to view available QA vacancies
-        env.QaCareerPage.click("See all QA jobs", 'link')
+        env.CareerPage.click("See all QA jobs", 'link')
 
         # Wait until the department filter dropdown has "Quality Assurance" selected
         wait.until(
